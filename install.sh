@@ -17,7 +17,8 @@ mkdir -p ~/.config/fontconfig/conf.d/ && mv 10-powerline-symbols.conf ~/.config/
 
 curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.sh | sh
 
-# gitconfig
+echo . ~/dotfiles/fish/fishrc >> ~/.config/fish/config.fish
+
 if [ -a $HOME/.gitconfig ]
 then echo ".gitconfig found, doing nothing"
 else 
