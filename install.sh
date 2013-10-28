@@ -15,6 +15,8 @@ mkdir -p ~/.fonts/ && mv PowerlineSymbols.otf ~/.fonts/
 fc-cache -vf ~/.fonts
 mkdir -p ~/.config/fontconfig/conf.d/ && mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
+curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.sh | sh
+
 # gitconfig
 if [ -a $HOME/.gitconfig ]
 then echo ".gitconfig found, doing nothing"
