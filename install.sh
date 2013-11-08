@@ -2,7 +2,7 @@
 # DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 DIR=~/dotfiles
 echo DIR
-for file in vimrc tmux.conf bash_profile bashrc ackrc vim bash gitignore tmx liquidpromptrc
+for file in vimrc tmux.conf bash_profile bashrc ackrc vim bash gitignore tmx liquidpromptrc config.fish
 do
   if [ -e $HOME/.${file} ]
   then echo ".$file found, doing nothing"
@@ -17,7 +17,7 @@ mkdir -p ~/.config/fontconfig/conf.d/ && mv 10-powerline-symbols.conf ~/.config/
 
 curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.sh | sh
 
-echo . ~/dotfiles/fish/fishrc >> ~/.config/fish/config.fish
+echo ". $HOME/dotfiles/fish/aliases.fish" >> ~/.config/fish/config.fish
 
 if [ -a $HOME/.gitconfig ]
 then echo ".gitconfig found, doing nothing"
