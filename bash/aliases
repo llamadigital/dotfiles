@@ -34,36 +34,6 @@ alias ll='ls -lh --color=auto'
 alias lsa='ls -lah --color=auto'
 alias l='ls -lah --color=auto'
 
-function gits()
-{
-  if [[ $# > 0 ]]
-  then
-    command="git "
-    for ((i=0; i<=$#; i++))
-    do
-      eval arg=\$$i
-      if [[ $arg != "bash" ]]
-      then
-        if [[ $(echo $arg|wc -w) -ne 1 ]]
-        then
-          command=$command" \"$arg\""
-        else
-          command=$command" $arg"
-        fi
-
-      fi
-    done
-    
-  bash -c "$command"
-   
-   echo ""
-   echo "----"
-   echo ""
-  fi  
-
-  git status
-}
-
 up() {
     str=""
     count=0
