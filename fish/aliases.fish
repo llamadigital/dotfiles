@@ -11,5 +11,4 @@ alias clip "xclip -sel clip"
 alias fn "find . -name"
 alias tmx "~/.tmx"
 alias qmysql 'mysql -u root -p '
-alias composer 'php composer.phar'
 alias ack 'ack-grep'
